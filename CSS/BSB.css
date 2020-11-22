@@ -1,0 +1,309 @@
+/*
+################### TO DO ##################### TO DO ###################
+################################# TO DO #################################
+
+- Make sure the window pages resize, as of yet they shift
+position instead of resizing
+- make a 'back to top' button inside every website_window
+- using JS EVENTS ask as a first window, which preferents the
+user has regarding the contents of the pages, depending on the
+preferences, move around the windows in order of relevance (nasa, esa etc)
+- divide the contents based on type (science, technology, legislation etc)
+- add a tab at the bottom where users can request new pages, i.e add new
+category (finance, politics) or individual websites (scienceNews.org,
+scienceAlert etc)
+- create a footer where you can subscribe to get more news, add contact etc
+
+################################# TO DO ###################################
+################### TO DO ##################### TO DO #####################
+*/
+
+
+/* ############################################ */
+/* ############ PHONE SIZE STYLING ############ */
+/* ############################################ */
+
+/* ############ TOP LAYER ############ */
+
+@media screen and (max-width:700px) {
+
+  body {
+  margin: 5%;
+  background-repeat:no-repeat;
+  background-position: top;
+  background-size:100% 100%;
+  background-image: url("https://wallpaperaccess.com/full/160504.jpg");
+  /* background-image: url("https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_960_720.jpg"); */
+  }
+
+  hr {
+    color: #FFD700;
+    opacity: 0.5;
+  }
+
+  div.sticky_head {
+    width: 100%;
+  }
+
+  #title {
+    background: rgba(25, 25, 112, 0.7);
+    border-radius: 15px;
+  }
+
+  h1 {
+    color: #FFD700;
+  }
+
+  h1, h3 {
+    color: #FFD700;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  p {
+    color: #F0FFFF;
+    text-align: center;
+  }
+
+/* ############ TABLE OF CONTENTS ############ */
+
+  #tableOfContents {
+    display: inline-block;
+    color: rgba(25, 25, 112, 1);
+    height: 40%;
+    width: 100%;
+  }
+
+  .fieldSet {
+    background: rgba(25, 25, 112, 0.6);
+    border-style: solid;
+    border-width: thick;
+    border-radius: 10px;
+    border-color: rgba(25, 25, 112, 1);
+  }
+
+  ul {
+    list-style: none;
+    column-count: 2;
+  }
+
+  legend {
+    color: #FFD700;
+  }
+  li {
+    margin-bottom: 6%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFD700;
+  }
+
+/* ############ WEBSITE WINDOWS ############ */
+
+  h4 a {
+    color: rgba(218, 165, 32, 1);
+    width: 20%;
+  }
+
+  h4 a:hover {
+    color: #FFD700;
+  }
+
+  section {
+    border-color: black;
+    position: relative;
+    background: rgba(25, 25, 112, 0.6);
+    border-radius: 15px;
+    margin-left: 0.5%;
+    margin-bottom: 1%;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 520px;
+  }
+
+  iframe {
+    width: 85%;
+  }
+
+  .websites {
+    display: none;
+  }
+
+  .websitesChosen {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .websites iframe {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    background: black;
+  }
+
+  .websitesChosen:hover {
+    background: rgba(25, 25, 112, 0.7);
+  }
+}
+
+/* ############ CONTENT REQUEST ############ */
+
+div.contentReq {
+  background: rgba(25, 25, 112, 0.7);
+  padding: 2% 0 2% 2%;
+}
+
+label.downLabel {
+  color: #FFD700;
+}
+
+/* ################# FOOTER ################# */
+
+footer {
+  border-radius: 5px;
+  background: rgba(25, 25, 112, 1);
+}
+
+
+
+
+/* ############################################ */
+/* ############ PHONE SIZE STYLING ############ */
+/* ############################################ */
+
+/* ############################################ */
+/* ######## OVER 700PX WINDOW STYLING ######### */
+/* ############################################ */
+
+/* ############ TOP LAYER ############ */
+
+@media screen and (min-width:700px) {
+
+  body {
+  margin: 5%;
+  background-repeat:no-repeat;
+  background-position: top;
+  background-size:100% 100%;
+  background-image: url("https://cdn.wallpapersafari.com/43/54/bZqREe.jpg");
+  /* background-image: url("https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_960_720.jpg"); */
+  }
+
+  div.sticky_head {
+    width: 100%;
+  }
+
+  #title {
+    background: rgba(25, 25, 112, 0.7);
+    border-radius: 15px;
+  }
+
+  h1 {
+    color: #FFD700;
+  }
+
+  h1, h3 {
+    color: #FFD700;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  p {
+    color: #F0FFFF;
+    text-align: center;
+  }
+
+/* ############ TABLE OF CONTENTS ############ */
+
+  #tableOfContents {
+    display: inline-block;
+    color: rgba(25, 25, 112, 1);
+    height: 40%;
+    width: 100%;
+  }
+
+  legend {
+    color: #FFD700;
+  }
+
+  ul {
+  	list-style: none;
+  }
+
+  li {
+    text-align: left;
+    margin-right: 1%;
+    margin-bottom: 1.5%;
+  	padding-left: 0;
+  	display: inline-block;
+  	width: 30%;
+  	vertical-align: top;
+  }
+
+  a {
+    color: #FFD700;
+    text-decoration: none;
+  }
+
+/* ############ WEBSITE WINDOWS ############ */
+
+  h4 a {
+    color: rgba(218, 165, 32, 1);
+    width: 20%;
+  }
+
+  h4 a:hover {
+    color: #FFD700;
+  }
+
+  section {
+    border-color: black;
+    position: relative;
+    background: rgba(25, 25, 112, 0.6);
+    border-radius: 15px;
+    margin-left: 0.5%;
+    margin-bottom: 1%;
+    display: inline-block;
+    width: 49%;
+    height: 520px;
+  }
+
+  iframe {
+    width: 85%;
+  }
+
+  .websites {
+    display: none;
+  }
+
+  .websitesChosen {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .websites iframe {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    background: black;
+  }
+
+  .websitesChosen:hover {
+    background: rgba(173, 216, 230, 0.6);
+  }
+}
+
+/* ############ CONTENT REQUEST ############ */
+
+
+
+
+
+
+
+
+
+/* ############################################ */
+/* ######## OVER 700PX WINDOW STYLING ######### */
+/* ############################################ */
