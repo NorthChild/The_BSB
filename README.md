@@ -13,5 +13,4 @@ if accessed by a phone, even tho phone view setting is present and functional)
 
 
 # view it at:
-
 https://northchild.github.io/The_BSB/BSB_main.html
