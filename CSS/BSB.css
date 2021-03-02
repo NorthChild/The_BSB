@@ -1,18 +1,38 @@
+/*
+################### TO DO ##################### TO DO ###################
+################################# TO DO #################################
+
+- Make sure the window pages resize, as of yet they shift
+position instead of resizing
+- make a 'back to top' button inside every website_window
+- using JS EVENTS ask as a first window, which preferents the
+user has regarding the contents of the pages, depending on the
+preferences, move around the windows in order of relevance (nasa, esa etc)
+- divide the contents based on type (science, technology, legislation etc)
+- add a tab at the bottom where users can request new pages, i.e add new
+category (finance, politics) or individual websites (scienceNews.org,
+scienceAlert etc)
+- create a footer where you can subscribe to get more news, add contact etc
+
+newest:
+
+- create a color scheme where you go from lightest to darkest in shades of blue
+################################# TO DO ###################################
+################### TO DO ##################### TO DO #####################
+*/
+
+
 /* ############################################ */
 /* ############ PHONE SIZE STYLING ############ */
 /* ############################################ */
 
 /* ############ TOP LAYER ############ */
 
-@media screen and (max-width:500px) {
+@media screen and (min-width:300px) and (max-width:500px) {
 
   body {
   margin: 5%;
-  background-repeat:no-repeat;
-  background-position: top;
-  background-size:100% 100%;
-  background-image: url("https://wallpaperaccess.com/full/160504.jpg");
-  /* background-image: url("https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_960_720.jpg"); */
+  background-color: #000814;
   }
 
   hr {
@@ -30,11 +50,13 @@
   }
 
   h1 {
-    color: #FFD700;
+    color: #f5cc00;
+    text-align: center;
+    text-decoration: underline;
   }
 
-  h1, h3 {
-    color: #FFD700;
+  h3 {
+    color: #cca000;
     text-align: center;
     text-decoration: underline;
   }
@@ -138,14 +160,33 @@ label.downLabel {
   color: #FFD700;
 }
 
+input.userInput {
+  opacity: 0.6;
+}
+
 /* ################# FOOTER ################# */
 
 footer {
   border-radius: 5px;
   background: rgba(25, 25, 112, 1);
+  padding: 0.2%;
 }
 
+footer ul {
+  margin-left: -11%;
+}
 
+footer li {
+  text-align: center;
+  font-size: 80%;
+  color: #ffffff;
+  margin-bottom: 2%;
+  opacity: 0.6;
+}
+
+input.sendReq {
+  opacity: 0.7;
+}
 
 
 /* ############################################ */
@@ -158,15 +199,11 @@ footer {
 
 /* ############ TOP LAYER ############ */
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:500px) and (max-width:2500px) {
 
   body {
   margin: 5%;
-  background-repeat:no-repeat;
-  background-position: top;
-  background-size:100% 100%;
-  background-image: url("https://cdn.wallpapersafari.com/43/54/bZqREe.jpg");
-  /* background-image: url("https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_960_720.jpg"); */
+  background-color: #000814;
   }
 
   div.sticky_head {
@@ -179,11 +216,13 @@ footer {
   }
 
   h1 {
-    color: #FFD700;
+    color: #f5cc00;
+    text-align: center;
+    text-decoration: underline;
   }
 
-  h1, h3 {
-    color: #FFD700;
+  h3 {
+    color: #cca000;
     text-align: center;
     text-decoration: underline;
   }
@@ -218,6 +257,12 @@ footer {
   	display: inline-block;
   	width: 30%;
   	vertical-align: top;
+  }
+
+  fieldset {
+    background-color: rgba(25, 25, 112, 0.6);
+    border-color: rgba(25, 25, 112, 1);
+    border-radius: 5px;
   }
 
   a {
@@ -271,17 +316,23 @@ footer {
   .websitesChosen:hover {
     background: rgba(173, 216, 230, 0.6);
   }
-}
+
 
 /* ############ CONTENT REQUEST ############ */
 
+  .contentReq {
+    text-align: center;
+
+  }
+
+
+
+/* ################# FOOTER ################# */
 
 
 
 
-
-
-
+}
 
 /* ############################################ */
 /* ######## OVER 700PX WINDOW STYLING ######### */
