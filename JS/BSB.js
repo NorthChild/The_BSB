@@ -1,11 +1,3 @@
-                         /*/
-                      // TO DO //
-
-- create a color button, this button will be able to change
-the layout of the page, colors etc
-
-                      // TO DO //
-                         /*/
 
 // this function stars with the loadout, it unchecks every single
 // checkbox, forcing the page to be empty
